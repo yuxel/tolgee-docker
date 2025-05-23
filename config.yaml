@@ -1,0 +1,18 @@
+tolgee:
+  postgres-autostart:
+    enabled: false
+  authentication:
+    enabled: true
+    initial-username: admin
+    initial-password: admin
+    jwt-secret: somethingatleast32charslongsomethingatleast32charslongsomethingatleast32charslong
+  machine-translation:
+    google:
+      api-key: YOUR_API_KEY
+spring:
+  datasource:
+    url: "jdbc:postgresql://db:5432/postgres"
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 10
